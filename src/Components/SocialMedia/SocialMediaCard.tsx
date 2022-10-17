@@ -35,7 +35,7 @@ export default function SocialMediaCard({
             </h1>
             <a href={link} target="blank_">
                 <div
-                    className={`w-[28rem] h-[14rem] grid place-content-center px-10 py-8 mx-auto mt-4 text-center rounded-2xl md:transform md:hover:translate-y-2 shadow-xl hover:shadow-2xl transition ${BackgroundUIElement2} ${Transition}`}
+                    className={`w-[24rem] h-[12rem] xs:w-[22rem] xs:h-[10rem] xxs:w-[28rem] xxs:h-[14rem] grid place-content-center px-10 py-8 mx-auto mt-4 text-center rounded-2xl md:transform md:hover:translate-y-2 shadow-xl hover:shadow-2xl transition ${BackgroundUIElement2} ${Transition}`}
                     style={{ backgroundColor: `${bg}` }}
                 >
                     {icon}

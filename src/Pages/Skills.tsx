@@ -38,8 +38,32 @@ export default function Skills() {
                     }}
                     initial={{ y: "-80%", scale: 0, opacity: 0 }}
                     animate={{ y: 0, scale: 1, opacity: 1 }}
-                    exit={{ x: "-100%", scale: 0, opacity: 0 }}
-                    className={`text-2xl text-center font-semibold ${TextColor} ${Transition}`}
+                    exit={{ x: "-80%", scale: 0, opacity: 0 }}
+                    className={`text-md md:text-4xl text-center font-semibold ${TextColor} ${Transition}`}
+                >
+                    {lang === "español"
+                        ? "Mis habilidades."
+                        : "My skills"}
+                </motion.p>
+            </motion.div>
+            <motion.div
+                transition={{
+                    duration: 0.75,
+                }}
+                initial={{ y: "-80%", opacity: 0}}
+                animate={{ y: 0, opacity: 1}}
+                exit={{ x: "-100%", opacity: 0}}
+                className={`${BackgroundUIElement} ${Transition} mt-16 w-3/4 rounded-2xl px-5 py-3 mx-auto`}
+            >
+                <motion.p
+                    transition={{
+                        delay: 0.5,
+                        duration: 0.75,
+                    }}
+                    initial={{ x: "80%", scale: 0, opacity: 0 }}
+                    animate={{ x: 0, scale: 1, opacity: 1 }}
+                    exit={{ x: "-80%", scale: 0, opacity: 0 }}
+                    className={`text-md md:text-2xl text-center font-semibold ${TextColor} ${Transition}`}
                 >
                     {lang === "español"
                         ? "A lo largo del tiempo que llevo metido en este mundo de la programación he llegado a adquirir algo de conocimiento con distintas tecnologías que me han permitido meterme más a fondo en el desarrollo frontend y backend."
@@ -47,7 +71,7 @@ export default function Skills() {
                 </motion.p>
             </motion.div>
             <div
-                className={`mt-16 rounded-xl ${Transition} ${BackgroundUIElement} w-3/5 md:w-full mx-auto`}
+                className="mt-16 rounded-xl md:w-full w-[90%] mx-auto"
             >
                 <section>
                     <h1
@@ -67,6 +91,7 @@ export default function Skills() {
                                         icon={skill.icon}
                                         bgColor={skill.bgColor}
                                         experience={skill.experience}
+                                        level={skill.level}
                                         description={skill.description}
                                         delay={i/8}
                                     />
