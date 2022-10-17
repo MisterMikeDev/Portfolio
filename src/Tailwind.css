@@ -28,6 +28,17 @@ html {
         sans-serif;
 }
 
+.black-and-white {
+    filter: gray;
+    filter: grayscale(1) opacity(50%) brightness(90%);
+    -webkit-filter: grayscale(1) opacity(50%) brightness(90%);
+}
+
+.floating {
+    animation: floating 2.5s ease-in-out infinite;
+    -webkit-animation: floating 2.5s ease-in-out infinite;
+}
+
 .loading {
     animation: spinner 1s ease-in-out infinite;
     -webkit-animation: spinner 1s ease-in-out infinite;
@@ -48,5 +59,29 @@ html {
     }
     100% {
         -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-15px) ;
+    }
+    100% {
+        transform: translateY(15px) ;
+    }
+}
+
+@-webkit-keyframes floating {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-15px) ;
+    }
+    100% {
+        transform: translateY(15px) ;
     }
 }

@@ -39,7 +39,7 @@ export default function SocialNetworks() {
                 </p>
             </motion.section>
             <section className="flex flex-col items-center">
-                <main className="container p-5 flex flex-wrap items-center">
+                <main className="py-5 flex flex-wrap items-center">
                     {SocialMedias.map(({ name, link, bg, icon, delay }) => {
                         return (
                             <SocialMediaCard
