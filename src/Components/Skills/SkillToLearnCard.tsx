@@ -41,7 +41,7 @@ export default function SkillCardToLearn({
                 className={`h-3/5 grid place-content-center ${TextColor} ${Transition}`}
             >
                 <span className="font-bold text-3xl">{skill}</span>
-                <span className="text-lg px-2">
+                <span className="text-lg px-4 md:px-2">
                     {lang === "español"
                         ? comment.Es
                         : lang === "english" && comment.En}
