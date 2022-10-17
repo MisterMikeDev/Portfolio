@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "614px",
+        xxs: "414px"
+      },
       animation: {
         "bounce-100": "bounce infinite 1.2s",
         "bounce-200": "bounce infinite 1.4s",
